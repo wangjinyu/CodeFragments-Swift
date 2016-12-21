@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		092E0BE01E0986E700E9F37C /* CFMacrosDefinition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092E0BDF1E0986E700E9F37C /* CFMacrosDefinition.swift */; };
 		0956C0DB1E08329D00F73B9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0956C0DA1E08329D00F73B9F /* AppDelegate.swift */; };
 		0956C0DD1E08329D00F73B9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0956C0DC1E08329D00F73B9F /* ViewController.swift */; };
 		0956C0E01E08329D00F73B9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0956C0DE1E08329D00F73B9F /* Main.storyboard */; };
@@ -15,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		092E0BDD1E09869000E9F37C /* test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = test.playground; sourceTree = "<group>"; };
+		092E0BDF1E0986E700E9F37C /* CFMacrosDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CFMacrosDefinition.swift; sourceTree = "<group>"; };
 		0956C0D71E08329D00F73B9F /* CodeFragments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeFragments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0956C0DA1E08329D00F73B9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0956C0DC1E08329D00F73B9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +38,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		092E0BDE1E0986AA00E9F37C /* CodeFragments */ = {
+			isa = PBXGroup;
+			children = (
+				092E0BDF1E0986E700E9F37C /* CFMacrosDefinition.swift */,
+			);
+			path = CodeFragments;
+			sourceTree = "<group>";
+		};
 		0956C0CE1E08329D00F73B9F = {
 			isa = PBXGroup;
 			children = (
@@ -54,8 +65,10 @@
 		0956C0D91E08329D00F73B9F /* CodeFragments-Swift */ = {
 			isa = PBXGroup;
 			children = (
+				092E0BDE1E0986AA00E9F37C /* CodeFragments */,
 				0956C0DA1E08329D00F73B9F /* AppDelegate.swift */,
 				0956C0DC1E08329D00F73B9F /* ViewController.swift */,
+				092E0BDD1E09869000E9F37C /* test.playground */,
 				0956C0DE1E08329D00F73B9F /* Main.storyboard */,
 				0956C0E11E08329D00F73B9F /* Assets.xcassets */,
 				0956C0E31E08329D00F73B9F /* LaunchScreen.storyboard */,
@@ -137,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				092E0BE01E0986E700E9F37C /* CFMacrosDefinition.swift in Sources */,
 				0956C0DD1E08329D00F73B9F /* ViewController.swift in Sources */,
 				0956C0DB1E08329D00F73B9F /* AppDelegate.swift in Sources */,
 			);
