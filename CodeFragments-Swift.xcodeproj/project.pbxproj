@@ -16,7 +16,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		092E0BDD1E09869000E9F37C /* test.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = test.playground; sourceTree = "<group>"; };
 		092E0BDF1E0986E700E9F37C /* CFMacrosDefinition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CFMacrosDefinition.swift; sourceTree = "<group>"; };
 		0956C0D71E08329D00F73B9F /* CodeFragments.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CodeFragments.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0956C0DA1E08329D00F73B9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +67,6 @@
 				092E0BDE1E0986AA00E9F37C /* CodeFragments */,
 				0956C0DA1E08329D00F73B9F /* AppDelegate.swift */,
 				0956C0DC1E08329D00F73B9F /* ViewController.swift */,
-				092E0BDD1E09869000E9F37C /* test.playground */,
 				0956C0DE1E08329D00F73B9F /* Main.storyboard */,
 				0956C0E11E08329D00F73B9F /* Assets.xcassets */,
 				0956C0E31E08329D00F73B9F /* LaunchScreen.storyboard */,
@@ -218,7 +216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -261,7 +259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
