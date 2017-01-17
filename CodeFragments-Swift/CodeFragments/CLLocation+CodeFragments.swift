@@ -30,7 +30,7 @@ extension CLLocation {
     /// - Returns: 地球坐标的CLLocation
     public class func locationEarth(fromMars:CLLocation) -> CLLocation {
         let coordinateEarth = transform_earth_from_mars(latitudeMars: fromMars.coordinate.latitude, longitudeMars: fromMars.coordinate.longitude)
-        return CLLocation.init(coordinate: CLLocationCoordinate2DMake(coordinateEarth.latitudeEarth, coordinateEarth.longitudeEarth), altitude: fromMars.altitude, horizontalAccuracy: fromMars.horizontalAccuracy, verticalAccuracy: fromMars.verticalAccuracy, course: fromMars.course, speed: fromMars.speed, timestamp: fromMars.timestamp)
+        return CLLocation.init(coordinate: CLLocationCoordinate2DMake(fromMars.coordinate.latitude - coordinateEarth.latitudeEarth, fromMars.coordinate.longitude - coordinateEarth.longitudeEarth), altitude: fromMars.altitude, horizontalAccuracy: fromMars.horizontalAccuracy, verticalAccuracy: fromMars.verticalAccuracy, course: fromMars.course, speed: fromMars.speed, timestamp: fromMars.timestamp)
     }
 
 //MARK: - 百度坐标和火星坐标的 CLLocation 对象互转
@@ -280,7 +280,7 @@ fileprivate func transform_earth_form_mars_longitude(x: Double, y: Double) -> Do
 
 fileprivate func transform_earth_from_mars(latitudeMars: CLLocationDegrees, longitudeMars:CLLocationDegrees) -> (latitudeEarth: CLLocationDegrees, longitudeEarth: CLLocationDegrees) {
     if transform_sino_out_china(latitude: latitudeMars, longitude: longitudeMars) {
-        return (latitudeEarth: latitudeMars, longitudeEarth: longitudeMars)
+        return (latitudeEarth: 0, longitudeEarth: 0)
     }
     
     var dLat = transform_earth_from_mars_latitude(x: longitudeMars - 105.0, y: latitudeMars - 35.0);
