@@ -13,7 +13,11 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("version = \(system_path_documents())")
+        let string = "2017-01-16T05:34:59.000Z"
+        let date =  Date.date(dateString: string)
+        print("date = \(date)")
+        
+        print("string = \(date?.string(format: "YYYY-MM-dd"))")
     }
 }
 
