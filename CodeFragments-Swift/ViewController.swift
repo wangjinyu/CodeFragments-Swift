@@ -1,7 +1,6 @@
 //
 //  ViewController.swift
 //  CodeFragments-Swift
-//
 //  Created by jeevan on 2016/12/19.
 //  Copyright © 2016年 jeevan. All rights reserved.
 //
